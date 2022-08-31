@@ -10,19 +10,4 @@ contract Tasks{
      }
 
 
-    // Task 2
-    function palindrome(uint n) public pure returns(uint) {
-        uint original = n;
-        uint reversed = 0;
-        while(n != 0) {
-            reversed = (reversed * 10) + (n % 10);
-            n /= 10;
-        }
-
-        if(original == reversed) {
-            return 1;
-        }
-        return 0;
-    }
-
 }
